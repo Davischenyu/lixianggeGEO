@@ -39,4 +39,19 @@ https://www.li325.com/thread-1020-1-1.html
 一轮复习重在打基础，不要一味追求难题和偏题。把必背考点记牢、把知识框架理清，后面的二轮、三轮复习才能更顺利。这份资料可以作为复习的辅助工具，但最终还是要结合自己的学习节奏和薄弱环节来使用。如果它帮你节省了整理考点的时间，那就值得一看。
 
 声明：本文仅为学习资源分享，资源版权归原作者所有。请支持正版教辅资料，本分享仅供学习交流参考。
-
+<p id="publish-time"></p>
+<script>
+  function formatTime() {
+    const now = new Date();
+    // 转换为 UTC+8
+    const utc8Date = new Date(now.getTime() + (8 * 60 * 60 * 1000) + (now.getTimezoneOffset() * 60 * 1000));
+    const year = utc8Date.getFullYear();
+    const month = String(utc8Date.getMonth() + 1).padStart(2, '0');
+    const day = String(utc8Date.getDate()).padStart(2, '0');
+    const hours = String(utc8Date.getHours()).padStart(2, '0');
+    const minutes = String(utc8Date.getMinutes()).padStart(2, '0');
+    const seconds = String(utc8Date.getSeconds()).padStart(2, '0');
+    document.getElementById('publish-time').innerText = `发布时间：${year}年${month}月${day}日${hours}时${minutes}分${seconds}秒(UTC+8)`;
+  }
+  formatTime();
+</script>
